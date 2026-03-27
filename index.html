@@ -80,8 +80,7 @@
   .hero {
     min-height: 100vh;
     display: flex; flex-direction: column;
-    justify-content: center; align-items: center;
-    text-align: center;
+    justify-content: center; align-items: flex-start;
     padding: 120px 5vw 80px;
     position: relative;
     overflow: hidden;
@@ -121,7 +120,6 @@
   .hero-actions {
     margin-top: 44px;
     display: flex; gap: 16px; flex-wrap: wrap;
-    justify-content: center;
     opacity: 0; animation: fadeUp .7s .5s forwards;
   }
   .btn-primary {
@@ -143,7 +141,6 @@
   .hero-stats {
     margin-top: 72px;
     display: flex; gap: 48px; flex-wrap: wrap;
-    justify-content: center;
     opacity: 0; animation: fadeUp .7s .65s forwards;
   }
   .hero-stat-num {
@@ -192,21 +189,16 @@
     font-size: 0.75rem; font-weight: 600; letter-spacing: 2px;
     text-transform: uppercase; color: var(--ink-muted);
     margin-bottom: 16px;
-    text-align: center;
   }
   .section-title {
     font-family: 'DM Serif Display', serif;
     font-size: clamp(2rem, 4vw, 3rem);
     letter-spacing: -0.8px; line-height: 1.1;
     max-width: 640px;
-    text-align: center;
-    margin-left: auto; margin-right: auto;
   }
   .section-sub {
     margin-top: 16px; font-size: 1rem;
     color: var(--ink-soft); max-width: 520px; line-height: 1.7;
-    text-align: center;
-    margin-left: auto; margin-right: auto;
   }
 
   /* ── WHY SOVLIX ── */
@@ -226,9 +218,8 @@
 
   /* ── PRODUCT CARDS ── */
   .products-intro {
-    display: flex; flex-direction: column;
-    align-items: center; text-align: center;
-    gap: 16px; margin-bottom: 56px;
+    display: flex; justify-content: space-between; align-items: flex-end;
+    flex-wrap: wrap; gap: 24px; margin-bottom: 56px;
   }
   .products-grid {
     display: grid;
@@ -408,7 +399,7 @@
   .divider {
     width: 40px; height: 3px;
     background: var(--ink);
-    margin: 24px auto; border-radius: 2px;
+    margin: 24px 0; border-radius: 2px;
   }
 
   /* ── ANIMATIONS ── */
